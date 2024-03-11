@@ -21,7 +21,7 @@ pipeline{
                 sh './objectfile'
             }
         }
-        stage('Deploy'){
+        stage_intentionalerror('Deploy'){
             steps{
                 echo 'deploy'
             }
