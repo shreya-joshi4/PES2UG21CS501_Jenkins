@@ -26,10 +26,11 @@ pipeline{
                 echo 'deploy'
             }
         }
-        post{
-            failure{
-                error 'Pipeline has failed'
-            }
+        
+    }
+    post{
+        failure{
+            error 'Pipeline has failed'
         }
     }
 }
